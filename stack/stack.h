@@ -5,13 +5,12 @@
 #include <stdlib.h>
 #include <iostream>
 
-#include "dump.h"
+#include "dump_stack.h"
 #include "types.h"
 #include "../colors.h"
 
-const int KAMIKADZE = 0xDEFACED;
-const int POISON = 0xBADBABE;
-typedef char* stack_type;
+static const char* KAMIKADZE = "DEFACED";
+static const char* POISON    = "BADBABE";
 
 #define STACK_CHECK(stk, err_info, err_no) {                     \
     err_no = StackVerify(stk);                                    \
@@ -28,7 +27,7 @@ typedef char* stack_type;
     if(err_no != no_err) {                                         \
         AboutError(__FILE__, __func__, __LINE__, err_no, err_info); \
         PrintError(err_info);                                        \
-        return POISON;                                                \
+        return (stack_type)POISON;                                    \
     }                                                                  \
 }
 

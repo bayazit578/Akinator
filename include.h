@@ -11,6 +11,7 @@
 #include <ctype.h>
 #include "colors.h"
 #include "constants.h"
-#include "stack.h"
+#include "stack/stack.h"
+#include "stack/dump_stack.h"
 
 #endif // INCLUDE_H

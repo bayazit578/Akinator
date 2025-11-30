@@ -1,4 +1,4 @@
-#include "dump.h"
+#include "dump_stack.h"
 
 #include <stdio.h>
 #include <stdlib.h>

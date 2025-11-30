@@ -16,14 +16,17 @@ struct Node {
         Node*  left;
         Node*  right;
         size_t rank;
-        bool allocated;
+        bool   allocated;
         };
 
-void  tree_create(Tree* tree);
-Node* new_node(Node* parent);
-Node* insert_elem(Node* node, int value, size_t rank);
-Node* read_node(Node* node, char** pointer, Node* parent);
-void  burn_the_tree(Node* node);
-void  new_criterion(Node* node);
+void   tree_create(Tree* tree);
+Node*  new_node(Node* parent);
+Node*  insert_elem(Node* node, int value, size_t rank);
+Node*  read_node(Node* node, char** pointer, Node* parent);
+void   burn_the_tree(Node* node);
+void   new_criterion(Node* node);
+stack* path_to_leaf(Node* node);
+void   path_to_stack(stack** path_stk, Node* node, error* err_info);
+Node*  leaf_search(Node* node, const char* name);
 
 #endif // TREE_H

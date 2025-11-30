@@ -4,228 +4,228 @@ digraph G {
     node [shape=plaintext, style=filled, color="#ffffffff", fontname="Times New Roman", fontcolor="white", charset="UTF-8"; fontsize=15];
 
     edge[color = "red"];
-    node126709761179664 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
-           <TR><TD COLSPAN="2">Ты программист?</TD></TR>
+    node130807694753808 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+           <TR><TD COLSPAN="2">Он/она программист</TD></TR>
            <TR><TD>нет</TD>           <TD>да</TD></TR>
            </TABLE>>, fillcolor="#26f950ff"];
     {
         rank=0;
-        node126709761179664;
+        node130807694753808;
     }
-    node126709761179728 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
-           <TR><TD COLSPAN="2">Ты любишь Python?</TD></TR>
+    node130807694753872 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+           <TR><TD COLSPAN="2">Любит Python</TD></TR>
            <TR><TD>нет</TD>           <TD>да</TD></TR>
            </TABLE>>, fillcolor="#26f950ff"];
     {
         rank=0;
-        node126709761179728;
+        node130807694753872;
     }
-    node126709761179792 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+    node130807694753936 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
            <TR><TD COLSPAN="2">ChatGPT</TD></TR>
            <TR><TD>0</TD>           <TD>0</TD></TR>
            </TABLE>>, fillcolor="#26f950ff"];
     {
         rank=0;
-        node126709761179792;
+        node130807694753936;
     }
-    node126709761179728->node126709761179792
-    node126709761179856 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
-           <TR><TD COLSPAN="2">Ты предпочитаешь C++?</TD></TR>
+    node130807694753872->node130807694753936
+    node130807694754000 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+           <TR><TD COLSPAN="2">Предпочитает C++</TD></TR>
            <TR><TD>нет</TD>           <TD>да</TD></TR>
            </TABLE>>, fillcolor="#26f950ff"];
     {
         rank=0;
-        node126709761179856;
+        node130807694754000;
     }
-    node126709761179920 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+    node130807694754064 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
            <TR><TD COLSPAN="2">Linus Torvalds</TD></TR>
            <TR><TD>0</TD>           <TD>0</TD></TR>
            </TABLE>>, fillcolor="#26f950ff"];
     {
         rank=0;
-        node126709761179920;
+        node130807694754064;
     }
-    node126709761179856->node126709761179920
-    node126709761179984 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+    node130807694754000->node130807694754064
+    node130807694754128 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
            <TR><TD COLSPAN="2">Mark Zuckerberg</TD></TR>
            <TR><TD>0</TD>           <TD>0</TD></TR>
            </TABLE>>, fillcolor="#26f950ff"];
     {
         rank=0;
-        node126709761179984;
+        node130807694754128;
     }
-    node126709761179856->node126709761179984
-    node126709761179728->node126709761179856
-    node126709761179664->node126709761179728
-    node126709761180048 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
-           <TR><TD COLSPAN="2">Ты врач?</TD></TR>
+    node130807694754000->node130807694754128
+    node130807694753872->node130807694754000
+    node130807694753808->node130807694753872
+    node130807694754192 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+           <TR><TD COLSPAN="2">Он/она врач</TD></TR>
            <TR><TD>нет</TD>           <TD>да</TD></TR>
            </TABLE>>, fillcolor="#26f950ff"];
     {
         rank=0;
-        node126709761180048;
+        node130807694754192;
     }
-    node126709761180112 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
-           <TR><TD COLSPAN="2">Ты хирург?</TD></TR>
+    node130807694754256 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+           <TR><TD COLSPAN="2">Он/она хирург</TD></TR>
            <TR><TD>нет</TD>           <TD>да</TD></TR>
            </TABLE>>, fillcolor="#26f950ff"];
     {
         rank=0;
-        node126709761180112;
+        node130807694754256;
     }
-    node126709761180176 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
-           <TR><TD COLSPAN="2">Твой отец врач?</TD></TR>
+    node130807694754320 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+           <TR><TD COLSPAN="2">Его/ее отец врач</TD></TR>
            <TR><TD>нет</TD>           <TD>да</TD></TR>
            </TABLE>>, fillcolor="#26f950ff"];
     {
         rank=0;
-        node126709761180176;
+        node130807694754320;
     }
-    node126709761180240 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
-           <TR><TD COLSPAN="2">Ты из династии врачей?</TD></TR>
+    node130807694754384 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+           <TR><TD COLSPAN="2">Он/она из династии врачей</TD></TR>
            <TR><TD>нет</TD>           <TD>да</TD></TR>
            </TABLE>>, fillcolor="#26f950ff"];
     {
         rank=0;
-        node126709761180240;
+        node130807694754384;
     }
-    node126709761180304 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+    node130807694754448 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
            <TR><TD COLSPAN="2">Потомственный врач</TD></TR>
            <TR><TD>0</TD>           <TD>0</TD></TR>
            </TABLE>>, fillcolor="#26f950ff"];
     {
         rank=0;
-        node126709761180304;
+        node130807694754448;
     }
-    node126709761180240->node126709761180304
-    node126709761180368 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+    node130807694754384->node130807694754448
+    node130807694754512 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
            <TR><TD COLSPAN="2">Кардиохирург</TD></TR>
            <TR><TD>0</TD>           <TD>0</TD></TR>
            </TABLE>>, fillcolor="#26f950ff"];
     {
         rank=0;
-        node126709761180368;
+        node130807694754512;
     }
-    node126709761180240->node126709761180368
-    node126709761180176->node126709761180240
-    node126709761180432 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+    node130807694754384->node130807694754512
+    node130807694754320->node130807694754384
+    node130807694754576 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
            <TR><TD COLSPAN="2">Травматолог</TD></TR>
            <TR><TD>0</TD>           <TD>0</TD></TR>
            </TABLE>>, fillcolor="#26f950ff"];
     {
         rank=0;
-        node126709761180432;
+        node130807694754576;
     }
-    node126709761180176->node126709761180432
-    node126709761180112->node126709761180176
-    node126709761180496 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
-           <TR><TD COLSPAN="2">Ты педиатр?</TD></TR>
+    node130807694754320->node130807694754576
+    node130807694754256->node130807694754320
+    node130807694754640 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+           <TR><TD COLSPAN="2">Он/она педиатр</TD></TR>
            <TR><TD>нет</TD>           <TD>да</TD></TR>
            </TABLE>>, fillcolor="#26f950ff"];
     {
         rank=0;
-        node126709761180496;
+        node130807694754640;
     }
-    node126709761180560 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+    node130807694754704 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
            <TR><TD COLSPAN="2">Детский врач</TD></TR>
            <TR><TD>0</TD>           <TD>0</TD></TR>
            </TABLE>>, fillcolor="#26f950ff"];
     {
         rank=0;
-        node126709761180560;
+        node130807694754704;
     }
-    node126709761180496->node126709761180560
-    node126709761180624 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+    node130807694754640->node130807694754704
+    node130807694754768 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
            <TR><TD COLSPAN="2">Терапевт</TD></TR>
            <TR><TD>0</TD>           <TD>0</TD></TR>
            </TABLE>>, fillcolor="#26f950ff"];
     {
         rank=0;
-        node126709761180624;
+        node130807694754768;
     }
-    node126709761180496->node126709761180624
-    node126709761180112->node126709761180496
-    node126709761180048->node126709761180112
-    node126709761180688 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
-           <TR><TD COLSPAN="2">Ты музыкант?</TD></TR>
+    node130807694754640->node130807694754768
+    node130807694754256->node130807694754640
+    node130807694754192->node130807694754256
+    node130807694754832 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+           <TR><TD COLSPAN="2">Он/она музыкант</TD></TR>
            <TR><TD>нет</TD>           <TD>да</TD></TR>
            </TABLE>>, fillcolor="#26f950ff"];
     {
         rank=0;
-        node126709761180688;
+        node130807694754832;
     }
-    node126709761180752 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
-           <TR><TD COLSPAN="2">Ты играешь на гитаре?</TD></TR>
+    node130807694754896 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+           <TR><TD COLSPAN="2">Он/она играет на гитаре</TD></TR>
            <TR><TD>нет</TD>           <TD>да</TD></TR>
            </TABLE>>, fillcolor="#26f950ff"];
     {
         rank=0;
-        node126709761180752;
+        node130807694754896;
     }
-    node126709761180816 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+    node130807694754960 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
            <TR><TD COLSPAN="2">Рок-музыкант</TD></TR>
            <TR><TD>0</TD>           <TD>0</TD></TR>
            </TABLE>>, fillcolor="#26f950ff"];
     {
         rank=0;
-        node126709761180816;
+        node130807694754960;
     }
-    node126709761180752->node126709761180816
-    node126709761180880 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
-           <TR><TD COLSPAN="2">Ты пианист?</TD></TR>
+    node130807694754896->node130807694754960
+    node130807694755024 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+           <TR><TD COLSPAN="2">Он/она пианист</TD></TR>
            <TR><TD>нет</TD>           <TD>да</TD></TR>
            </TABLE>>, fillcolor="#26f950ff"];
     {
         rank=0;
-        node126709761180880;
+        node130807694755024;
     }
-    node126709761180944 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+    node130807694755088 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
            <TR><TD COLSPAN="2">Классический музыкант</TD></TR>
            <TR><TD>0</TD>           <TD>0</TD></TR>
            </TABLE>>, fillcolor="#26f950ff"];
     {
         rank=0;
-        node126709761180944;
+        node130807694755088;
     }
-    node126709761180880->node126709761180944
-    node126709761181008 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+    node130807694755024->node130807694755088
+    node130807694755152 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
            <TR><TD COLSPAN="2">Барабанщик</TD></TR>
            <TR><TD>0</TD>           <TD>0</TD></TR>
            </TABLE>>, fillcolor="#26f950ff"];
     {
         rank=0;
-        node126709761181008;
+        node130807694755152;
     }
-    node126709761180880->node126709761181008
-    node126709761180752->node126709761180880
-    node126709761180688->node126709761180752
-    node126709761181072 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
-           <TR><TD COLSPAN="2">Спортсмен?</TD></TR>
+    node130807694755024->node130807694755152
+    node130807694754896->node130807694755024
+    node130807694754832->node130807694754896
+    node130807694755216 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+           <TR><TD COLSPAN="2">Он/она спортсмен</TD></TR>
            <TR><TD>нет</TD>           <TD>да</TD></TR>
            </TABLE>>, fillcolor="#26f950ff"];
     {
         rank=0;
-        node126709761181072;
+        node130807694755216;
     }
-    node126709761181136 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+    node130807694755280 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
            <TR><TD COLSPAN="2">Футболист</TD></TR>
            <TR><TD>0</TD>           <TD>0</TD></TR>
            </TABLE>>, fillcolor="#26f950ff"];
     {
         rank=0;
-        node126709761181136;
+        node130807694755280;
     }
-    node126709761181072->node126709761181136
-    node126709761181200 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+    node130807694755216->node130807694755280
+    node130807694755344 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
            <TR><TD COLSPAN="2">Unknown Person</TD></TR>
            <TR><TD>0</TD>           <TD>0</TD></TR>
            </TABLE>>, fillcolor="#26f950ff"];
     {
         rank=0;
-        node126709761181200;
+        node130807694755344;
     }
-    node126709761181072->node126709761181200
-    node126709761180688->node126709761181072
-    node126709761180048->node126709761180688
-    node126709761179664->node126709761180048
+    node130807694755216->node130807694755344
+    node130807694754832->node130807694755216
+    node130807694754192->node130807694754832
+    node130807694753808->node130807694754192
 }

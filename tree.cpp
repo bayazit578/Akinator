@@ -144,3 +144,39 @@ void new_criterion(Node* node) {
 
     node->value = crit;
 }
+
+stack* path_to_leaf(Node* node) {
+    stack* path_stk = NULL;
+    error* err_info = NULL;
+    StackInit(&path_stk, 5, err_info);
+    path_to_stack(&path_stk, node, err_info);
+
+    return path_stk;
+}
+
+void path_to_stack(stack** path_stk, Node* node, error* err_info) {
+    if(node->parent) {
+        StackPush(path_stk, node->parent->value, err_info);
+        path_to_stack(path_stk, node->parent, err_info);
+    }
+}
+
+Node* leaf_search(Node* node, const char* name) {
+    if (!strcmp(node->value, name)) {
+        return node;
+    }
+
+    Node* found = NULL;
+
+    if (node->left) {
+        found = leaf_search(node->left, name);
+        if (found) return found;
+    }
+
+    if (node->right) {
+        found = leaf_search(node->right, name);
+        if (found) return found;
+    }
+
+    return NULL;
+}

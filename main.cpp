@@ -7,16 +7,15 @@
 
 int main(size_t argc, char* argv[]) {
 
-    if(argc == 1) {
-        fprintf(stderr, RED "No input file. Please, enter it.\n" RESET);
+    if(argc < 3) {
+        fprintf(stderr, RED "Too few input args. Please, enter it.\n" RESET);
         return 1;
     }
 
-    else if(argc > 2) {
-        fprintf(stderr, RED "Invalid filename. Please, enter it correctly.\n" RESET);
+    else if(argc > 3) {
+        fprintf(stderr, RED "Invalid filename or mode. Please, enter it correctly.\n" RESET);
         return 1;
     }
-
     FILE* in_file = fopen(argv[1], "r+");
     size_t size_buff = 0;
     char* buff = read_file(in_file, &size_buff);
@@ -32,7 +31,13 @@ int main(size_t argc, char* argv[]) {
     char* pointer = buff;
     tree.root = read_node(tree.root, &pointer, NULL);
 
-    dialogue(&tree);
+    if(!memcmp(argv[2], "akinator", 8)) {
+        akinator_mode(&tree);
+    }
+
+    else if(!memcmp(argv[2], "comparator", 10)) {
+        comparative_mode(&tree);
+    }
 
     fseek(in_file, 0, SEEK_SET);
 

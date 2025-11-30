@@ -13,8 +13,9 @@ CXXFLAGS="-D_DEBUG -ggdb3 -std=c++17 -O0 -Wall -Wextra -Weffc++ -Waggressive-loo
 -fsanitize=address,alignment,bool,bounds,enum,float-cast-overflow,float-divide-by-zero,integer-divide-by-zero,\
 leak,nonnull-attribute,null,object-size,return,returns-nonnull-attribute,shift,signed-integer-overflow,undefined,\
 unreachable,vla-bound,vptr"
-SOURCES="main.cpp tree.cpp dump.cpp read_file.cpp user_io.cpp"
-OUTPUT="program"
+SOURCES="main.cpp tree.cpp dump.cpp read_file.cpp user_io.cpp stack/dump_stack.cpp stack/stack.cpp"
+OUTPUT="akinator"
+MODE=$1
 
 echo "Compilation..."
 g++ $CXXFLAGS $SOURCES -o $OUTPUT
@@ -23,7 +24,7 @@ if [ $? -eq 0 ]; then
     echo "Compilation executed successfully!"
     echo "Running program: ./$OUTPUT"
     echo "=================================="
-    ./$OUTPUT tree
+    ./$OUTPUT tree $MODE
     echo "=================================="
     echo "Program executed."
     read -p "Press Enter to exit..."
