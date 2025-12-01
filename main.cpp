@@ -44,6 +44,7 @@ int main(size_t argc, char* argv[]) {
 
     tree_dump(&tree, "tree.dot");
 
+    fclose(in_file);
     burn_the_tree(tree.root);
     free(buff);
 
