@@ -40,6 +40,7 @@ int main(size_t argc, char* argv[]) {
     }
 
     fseek(in_file, 0, SEEK_SET);
+    tree_printf(tree.root, in_file);
 
     tree_dump(&tree, "tree.dot");
 

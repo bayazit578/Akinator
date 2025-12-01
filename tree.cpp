@@ -126,13 +126,28 @@ void burn_the_tree(Node* node) {
 }
 
 void new_criterion(Node* node) {
+    int ch = 0;
+    do {
+        ch = fgetc(stdin);
+    } while(ch != '\n');
+
     char* crit = (char*)calloc(100, sizeof(char));
     printf("Напиши критерий по которым твой персонаж отличается от моего:\n");
-    scanf("%s", crit);
+
+    int counter1 = 0;
+    for(; (ch = fgetc(stdin)) != '\n'; counter1++) {
+        crit[counter1] = ch;
+    }
+    crit[counter1] = '\0';
 
     char* character = (char*)calloc(100, sizeof(char));
     printf("Напиши название своего персонажа:\n");
-    scanf("%s", character);
+
+    int counter2 = 0;
+    for(; (ch = fgetc(stdin)) != '\n'; counter2++) {
+        character[counter2] = ch;
+    }
+    character[counter2] = '\0';
 
     node->left = new_node(node);
     node->left->value = node->value;
@@ -179,4 +194,22 @@ Node* leaf_search(Node* node, const char* name) {
     }
 
     return NULL;
+}
+
+void tree_printf(Node* node, FILE* out_file) {
+    fprintf(out_file, "(%s");
+
+    if(node->left || node->right) {
+        if(node->left) {
+            tree_printf(node->left, out_file);
+        }
+        if(node->right) {
+            tree_printf(node->right, out_file);
+        }
+    }
+
+    else {
+        fprintf(out_file, " nil nil");
+    }
+    fprintf(out_file, ")");
 }

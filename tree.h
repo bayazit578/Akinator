@@ -28,5 +28,6 @@ void   new_criterion(Node* node);
 stack* path_to_leaf(Node* node);
 void   path_to_stack(stack** path_stk, Node* node, error* err_info);
 Node*  leaf_search(Node* node, const char* name);
+void tree_printf(Node* node, FILE* out_file);
 
 #endif // TREE_H
